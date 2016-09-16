@@ -12,10 +12,7 @@ Created on Wed Sep 14 12:14:23 2016
 
 s = input("Enter a string: ")
 bobCount = 0
-for l in s:
-    if l == 'b':
-    if l == 'o':
-        break
-    if l=='b':
+for i in range(len(s)):
+    if s[i:i+3] == 'bob':
         bobCount +=1
 print(bobCount)
